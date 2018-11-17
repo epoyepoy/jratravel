@@ -1,0 +1,9 @@
+#jumbo {
+    background: url("/images/jeremie-cremer.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}

@@ -16,10 +16,10 @@ app.get("/blogs/top-places-to-visit-in-the-philippines", function(req, res){
     res.render("blogs/top-places-to-visit-in-the-philippines"); 
 });
 
-// app.listen(process.env.PORT, process.env.IP, function(){
-//    console.log("The Server Has Started!"); 
-// });
-
-app.listen(3000, function(){
+app.listen(process.env.PORT, process.env.IP, function(){
    console.log("The Server Has Started!"); 
 });
+
+// app.listen(3000, function(){
+//    console.log("The Server Has Started!"); 
+// });

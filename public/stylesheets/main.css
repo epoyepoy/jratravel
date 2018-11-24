@@ -1,9 +1,9 @@
 #jumbo {
-    background: url("/images/jeremie-cremer.jpg");
-    background-position: bottom;
+    background: url("/images/travel-1.jpg");
+    background-position: center;
     background-size: cover;
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }

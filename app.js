@@ -16,6 +16,10 @@ app.get("/blogs/top-places-to-visit-in-the-philippines", function(req, res){
     res.render("blogs/top-places-to-visit-in-the-philippines"); 
 });
 
+app.get("/blogs/budget-and-mid-range-boracay-hotels", function(req, res){
+    res.render("blogs/budget-and-mid-range-boracay-hotels"); 
+});
+
 app.listen(process.env.PORT, process.env.IP, function(){
    console.log("The Server Has Started!"); 
 });

@@ -1,5 +1,5 @@
-var express       = require("express"),
-    app           = express();
+const   express = require("express"),
+        app     = express();
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
@@ -18,6 +18,10 @@ app.get("/blogs/top-places-to-visit-in-the-philippines", function(req, res){
 
 app.get("/blogs/budget-and-mid-range-boracay-hotels", function(req, res){
     res.render("blogs/budget-and-mid-range-boracay-hotels"); 
+});
+
+app.use((req, res, next) => {
+    res.status(404).send('<h1>Page Not Found!!!</h1>');
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){

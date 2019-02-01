@@ -4,19 +4,23 @@ const   express = require("express"),
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
-app.get("/", function(req, res){
+app.get("/", (req, res) => {
     res.render("index"); 
 });
 
-app.get("/blogs/start-your-own-travel-business", function(req, res){
+app.get("/about", (req, res) => {
+    res.render("about"); 
+});
+
+app.get("/blogs/start-your-own-travel-business", (req, res) => {
     res.render("blogs/start-your-own-travel-business"); 
 });
 
-app.get("/blogs/top-places-to-visit-in-the-philippines", function(req, res){
+app.get("/blogs/top-places-to-visit-in-the-philippines", (req, res) => {
     res.render("blogs/top-places-to-visit-in-the-philippines"); 
 });
 
-app.get("/blogs/budget-and-mid-range-boracay-hotels", function(req, res){
+app.get("/blogs/budget-and-mid-range-boracay-hotels", (req, res) => {
     res.render("blogs/budget-and-mid-range-boracay-hotels"); 
 });
 

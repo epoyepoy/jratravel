@@ -28,10 +28,10 @@ app.use((req, res, next) => {
     res.status(404).send('<h1>Page Not Found!!!</h1>');
 });
 
-app.listen(process.env.PORT, process.env.IP, function(){
-   console.log("The Server Has Started!"); 
-});
-
-// app.listen(3000, function(){
+// app.listen(process.env.PORT, process.env.IP,() => {
 //    console.log("The Server Has Started!"); 
 // });
+
+app.listen(3000,() => {
+   console.log("The Server Has Started!"); 
+});

@@ -25,7 +25,7 @@ app.get("/blogs/budget-and-mid-range-boracay-hotels", (req, res) => {
 });
 
 app.use((req, res, next) => {
-    res.status(404).send('<h1>Page Not Found!!!</h1>');
+    res.status(404).render("404");
 });
 
 app.listen(process.env.PORT, process.env.IP,() => {

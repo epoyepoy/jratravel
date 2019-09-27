@@ -28,10 +28,10 @@ app.use((req, res, next) => {
     res.status(404).render("404");
 });
 
-app.listen(process.env.PORT, process.env.IP,() => {
-   console.log("The Server Has Started!"); 
-});
-
-// app.listen(3000,() => {
+// app.listen(process.env.PORT, process.env.IP,() => {
 //    console.log("The Server Has Started!"); 
 // });
+
+app.listen(3000,() => {
+   console.log("The Server Has Started!"); 
+});
